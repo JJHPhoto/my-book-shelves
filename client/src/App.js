@@ -1,21 +1,19 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import GloabalNavbar from "./components/GloabalNavbar";
+import Header from "./components/Header";
+import { Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <GloabalNavbar />
+      <Container className="py-5">
+        <Header />
+      </Container>
+    </div>
+  );
 }
 
 export default App;
