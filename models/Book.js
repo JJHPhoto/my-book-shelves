@@ -3,11 +3,10 @@ const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
   title: String,
-  authors: String,
+  authors: [String],
   description: String,
   image: String,
   link: String,
-  googleBookId: String,
 });
 
 const Book = mongoose.model("Book", bookSchema);
