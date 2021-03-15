@@ -1,17 +1,30 @@
 import React from "react";
-import "./App.css";
+
+import "./_colors.sass";
+
+import "bootstrap/scss/bootstrap.scss";
 import GloabalNavbar from "./components/GloabalNavbar";
-import Header from "./components/Header";
-import { Container } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+// import "bootstrap/scss/_utilities.scss";
+// import "bootstrap/scss/_variables.scss";
+// import "bootstrap/scss/_mixins.scss";
+// import "bootstrap/scss/_functions.scss";
+// import "bootstrap/scss/bootstrap-reboot.scss";
+// import "bootstrap/scss/bootstrap-grid.scss";
+// import "bootstrap/scss/_navbar.scss";
 
 function App() {
   return (
     <div>
       <GloabalNavbar />
-      <Container className="py-5">
+      <div className="container">
+        <div className="row">
+          <h3> Find me books!</h3>
+        </div>
+        {/* <Container className="py-5">
         <Header />
-      </Container>
+      </Container> */}
+      </div>
     </div>
   );
 }
