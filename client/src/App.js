@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./_colors.sass";
-
-import "bootstrap/scss/bootstrap.scss";
+import "./main.sass";
 import GloabalNavbar from "./components/GloabalNavbar";
+import Header from "./components/Header";
 
+// import "bootstrap/scss/bootstrap.scss";
 // import "bootstrap/scss/_utilities.scss";
 // import "bootstrap/scss/_variables.scss";
 // import "bootstrap/scss/_mixins.scss";
@@ -17,14 +17,7 @@ function App() {
   return (
     <div>
       <GloabalNavbar />
-      <div className="container">
-        <div className="row">
-          <h3> Find me books!</h3>
-        </div>
-        {/* <Container className="py-5">
-        <Header />
-      </Container> */}
-      </div>
+      <Header />
     </div>
   );
 }
