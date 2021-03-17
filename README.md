@@ -51,7 +51,9 @@ To watch a video of the application being fully demo'd please use this link: [Ap
 - react bootstrap components: navbar, jumbotron, search, form
 - api call with test info.
 - router, switch
+- create pages
 - state
+- print test text to results page
 
 ## Resources
 

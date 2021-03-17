@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import SaveButton from "./SaveButton";
 
 function Results({ books }) {
   return (
@@ -7,11 +8,12 @@ function Results({ books }) {
       <Card.Body>
         {books.length ? (
           <div>
-            <h2> Results</h2>
+            <h2> Search Results</h2>
             {books.map((book) => (
               <Card className="my-4" key={book.id}>
                 <Card.Body>
-                  <p>{book.title}</p>
+                  <SaveButton />
+                  <p className="my-4">{book.title}</p>
                   <p>{book.description}</p>
                 </Card.Body>
               </Card>
@@ -19,15 +21,12 @@ function Results({ books }) {
           </div>
         ) : (
           <div>
-            <h2>NO result</h2>
+            <h2>No Search Result</h2>
           </div>
         )}
       </Card.Body>
     </Card>
   );
-  // <div>
-  //   <h1> Results page</h1>
-  // </div>
 }
 
 export default Results;
