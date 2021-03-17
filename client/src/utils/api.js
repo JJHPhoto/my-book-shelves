@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = {
+const api = {
   getBooks() {
     return {
       data: [
@@ -19,4 +19,4 @@ const API = {
   },
 };
 
-export default API;
+export default api;
