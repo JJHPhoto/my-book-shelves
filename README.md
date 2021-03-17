@@ -50,6 +50,8 @@ To watch a video of the application being fully demo'd please use this link: [Ap
 - react icons
 - react bootstrap components: navbar, jumbotron, search, form
 - api call with test info.
+- router, switch
+- state
 
 ## Resources
 

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Button, Card, Form } from "react-bootstrap";
 import api from "../utils/api";
 
-function SearchForm() {
+function SearchForm({ setBooks }) {
   const bookSearch = useRef();
 
   const handleSubmit = (event) => {
@@ -12,7 +12,8 @@ function SearchForm() {
     // console.log(bookSearch.current);
 
     api.getBooks(bookSearch.current.value).then(({ data }) => {
-      console.log(data);
+      setBooks(data);
+      // console.log(data);
     });
   };
 

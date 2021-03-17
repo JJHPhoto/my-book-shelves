@@ -2,9 +2,12 @@ import React from "react";
 
 import "./main.sass";
 import GloabalNavbar from "./components/GloabalNavbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import { Container } from "react-bootstrap";
-import SearchForm from "./components/SearchForm";
+import SearchPage from "./pages/SearchPage";
+import SavedPage from "./pages/SavedPage";
+import NotFound from "./pages/NotFound";
 
 // import "bootstrap/scss/bootstrap.scss";
 // import "bootstrap/scss/_utilities.scss";
@@ -17,13 +20,17 @@ import SearchForm from "./components/SearchForm";
 
 function App() {
   return (
-    <div>
+    <Router>
       <GloabalNavbar />
       <Container className="py-5">
         <Header />
-        <SearchForm />
+        <Switch>
+          <Route exact path="/" component={SearchPage} />
+          <Route exact path="/saved" component={SavedPage} />
+          <Route component={NotFound} />
+        </Switch>
       </Container>
-    </div>
+    </Router>
   );
 }
 
