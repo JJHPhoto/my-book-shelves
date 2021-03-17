@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Button, Card, Form } from "react-bootstrap";
+import api from "../utils/api";
 
 function SearchForm() {
   const bookSearch = useRef();
@@ -7,8 +8,12 @@ function SearchForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    bookSearch.current.value;
+    // bookSearch.current.value;
     // console.log(bookSearch.current);
+
+    api.getBooks(bookSearch.current.value).then(({ data }) => {
+      console.log(data);
+    });
   };
 
   return (
