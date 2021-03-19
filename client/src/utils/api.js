@@ -42,6 +42,10 @@ const api = {
 
     // axios.get(" ");
   },
+
+  async addBook(book) {
+    return axios.post("/api/books", book);
+  },
 };
 
 export default api;

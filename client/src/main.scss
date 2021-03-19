@@ -1,0 +1,10 @@
+@import "./_variables.scss";
+@import "~bootstrap/scss/bootstrap";
+
+.bg-test {
+  background-color: $bg-test;
+}
+
+.bg-primary {
+  background-color: $bg-primary;
+}

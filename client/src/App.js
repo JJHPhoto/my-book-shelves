@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./main.sass";
-import GloabalNavbar from "./components/GloabalNavbar";
+import "./main.scss";
+import GlobalNavbar from "./components/GlobalNavbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import { Container } from "react-bootstrap";
@@ -21,7 +21,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Router>
-      <GloabalNavbar />
+      <GlobalNavbar isloggedin={false} />
       <Container className="py-5">
         <Header />
         <Switch>

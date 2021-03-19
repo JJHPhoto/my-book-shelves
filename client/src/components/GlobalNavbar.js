@@ -2,9 +2,12 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { GiBookshelf } from "react-icons/gi";
 
-function GloabalNavbar() {
+function GlobalNavbar(props) {
   return (
-    <Navbar bg="primary" variant="dark">
+    <Navbar
+      className={props.isloggedin ? `bg-primary` : `bg-test`}
+      variant="dark"
+    >
       <Navbar.Brand href="#home">
         {" "}
         <GiBookshelf /> Google Books
@@ -17,4 +20,4 @@ function GloabalNavbar() {
   );
 }
 
-export default GloabalNavbar;
+export default GlobalNavbar;
