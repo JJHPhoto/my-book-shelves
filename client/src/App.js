@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./main.scss";
+import "./main.sass";
 import GlobalNavbar from "./components/GlobalNavbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";

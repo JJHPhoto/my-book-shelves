@@ -4,10 +4,7 @@ import { GiBookshelf } from "react-icons/gi";
 
 function GlobalNavbar(props) {
   return (
-    <Navbar
-      className={props.isloggedin ? `bg-primary` : `bg-test`}
-      variant="dark"
-    >
+    <Navbar bg="primary" variant="dark">
       <Navbar.Brand href="#home">
         {" "}
         <GiBookshelf /> Google Books
