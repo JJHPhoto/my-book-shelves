@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./main.sass";
 import GlobalNavbar from "./components/GlobalNavbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
