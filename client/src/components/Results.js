@@ -12,7 +12,7 @@ function Results({ books }) {
             {books.map((book) => (
               <Card className="my-4" key={book.id}>
                 <Card.Body>
-                  <SaveButton />
+                  <SaveButton book={book} />
                   <p className="my-4">{book.title}</p>
                   <p>{book.description}</p>
                 </Card.Body>

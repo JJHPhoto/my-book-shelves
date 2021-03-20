@@ -6,11 +6,14 @@ function SaveButton({ book, updateBook }) {
   const saveBook = () => {
     api
       .addBook(book)
-      .then(() => {})
+      .then(() => {
+        console.log("yes");
+      })
       .catch((err) => {
         console.log(err);
       });
   };
+  console.log("savebook", book);
 
   return <Button onClick={saveBook}>Save</Button>;
 }
