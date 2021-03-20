@@ -11,7 +11,7 @@ function SearchForm({ setBooks }) {
     // bookSearch.current.value;
     // console.log(bookSearch.current);
 
-    api.getBooks(bookSearch.current.value).then(({ data }) => {
+    api.getGoogleBooks(bookSearch.current.value).then(({ data }) => {
       setBooks(data);
       // console.log(data);
     });

@@ -30,13 +30,13 @@ To watch a video of the application being fully demo'd please use this link: [Ap
 ## Technologies Used
 
 <p>
-  <img src="https://img.shields.io/badge/-React-informational" />
   <img src="https://img.shields.io/badge/React-Boostrap-blue" />
-  <img src="https://img.shields.io/badge/Boostrap-informational" />
   <img src="https://img.shields.io/badge/-heroku-red" />
+  <img src="https://img.shields.io/badge/-React-informational" />
+  <img src="https://img.shields.io/badge/Boostrap-informational" />
   <img src="https://img.shields.io/badge/Javascript-yellow" />
   <img src="https://img.shields.io/badge/HTML-orange" />
-   <img src="https://img.shields.io/badge/-express-9cf" />
+  <img src="https://img.shields.io/badge/-express-9cf" />
   <img src="https://img.shields.io/badge/-node.js-green" />
   <img src="https://img.shields.io/badge/lint-informational" />
 

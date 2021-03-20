@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = {
-  async getBooks(book) {
+  async getGoogleBooks(book) {
     return {
       data: [
         {
@@ -41,6 +41,10 @@ const api = {
     };
 
     // axios.get(" ");
+  },
+
+  async getBooks() {
+    return axios.get("/api/books");
   },
 
   async addBook(book) {
