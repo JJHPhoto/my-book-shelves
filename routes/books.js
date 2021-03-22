@@ -25,4 +25,10 @@ router
       .catch((err) => console.log(err));
   });
 
+router.route("/books/:id").delete((req, res) => {
+  Book.findByIdAndDelete(req.params.id)
+    .then((deletedBook) => res.json(deletedBook))
+    .catch((err) => console.log(err));
+});
+
 module.exports = router;

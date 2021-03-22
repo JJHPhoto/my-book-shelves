@@ -50,6 +50,10 @@ const api = {
   async addBook(book) {
     return axios.post("/api/books", book);
   },
+
+  async deleteBook(bookId) {
+    return axios.delete(`/api/books/${bookId}`);
+  },
 };
 
 export default api;

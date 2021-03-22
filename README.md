@@ -39,6 +39,7 @@ To watch a video of the application being fully demo'd please use this link: [Ap
   <img src="https://img.shields.io/badge/-express-9cf" />
   <img src="https://img.shields.io/badge/-node.js-green" />
   <img src="https://img.shields.io/badge/lint-informational" />
+  <img src="https://img.shields.io/badge/SASS-purple" />
 
 </p>
 
@@ -55,6 +56,8 @@ To watch a video of the application being fully demo'd please use this link: [Ap
 - state
 - print test text to results page
 - save button
+- delete button
+- googlebooks api research
 
 ## Resources
 
