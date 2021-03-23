@@ -5,7 +5,7 @@ import SearchForm from "../components/SearchForm";
 function SearchPage() {
   const [books, setBooks] = useState([]);
 
-  console.log("Books", books);
+  // console.log("Books", books);
 
   return (
     <div>

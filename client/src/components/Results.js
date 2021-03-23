@@ -27,7 +27,7 @@ function Results({ books }) {
           </div>
         ) : (
           <div>
-            <h2>No Search Result</h2>
+            <h2>Search Results</h2>
           </div>
         )}
       </Card.Body>

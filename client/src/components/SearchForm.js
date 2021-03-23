@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useRef, useState } from "react";
 import { Button, Card, Form } from "react-bootstrap";
-// import api from "../utils/api";
 
 function SearchForm({ setBooks }) {
   const [APIKEY, setAPIKEY] = useState(
@@ -36,7 +35,7 @@ function SearchForm({ setBooks }) {
             <Form.Control
               ref={bookSearch}
               type="text"
-              placeholder="Enter the name of a book."
+              placeholder="Enter the name of a book or author."
             />
           </Form.Group>
           <Button variant="primary" type="submit">

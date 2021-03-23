@@ -11,11 +11,11 @@ function SavedPage() {
     });
   };
 
-  useEffect(() => {
-    getBooks();
-  }, [setBooks]);
+  // useEffect(() => {
+  //   getBooks();
+  // }, [setBooks]);
 
-  console.log("savedBooks", books);
+  // console.log("savedBooks", books);
 
   return (
     <div>

@@ -58,6 +58,7 @@ To watch a video of the application being fully demo'd please use this link: [Ap
 - save button
 - delete button
 - googlebooks api research. different data type than our mock search. needed to change how we saved it on our back end and then print on our front end.
+- API search working. Need to pass results to other component.
 
 ## Resources
 
