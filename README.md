@@ -57,7 +57,7 @@ To watch a video of the application being fully demo'd please use this link: [Ap
 - print test text to results page
 - save button
 - delete button
-- googlebooks api research
+- googlebooks api research. different data type than our mock search. needed to change how we saved it on our back end and then print on our front end.
 
 ## Resources
 

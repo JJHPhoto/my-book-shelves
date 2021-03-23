@@ -10,16 +10,22 @@ function SavedResults({ books, getBooks }) {
           <div>
             <h2> Results</h2>
             {books.map((book) => (
-              <Card className="my-4" key={book._id}>
+              <Card className="my-4" key={book.id}>
                 <Card.Body>
-                  <Button href={book.link}>View</Button>
+                  <Button href={book.selfLink}>View</Button>
                   <DeleteButton
-                    bookId={book._id}
+                    bookId={book.id}
                     getBooks={getBooks}
                     className="ml-2"
                   />
-                  <p className="my-4">{book.title}</p>
-                  <p>{book.description}</p>
+                  <p>
+                    <img src={book.volumeInfo.imageLinks.thumbnail} />
+                  </p>
+                  <h2 className="my-3">
+                    "{book.volumeInfo.title}" by {book.volumeInfo.authors}
+                  </h2>
+                  <h3>Book description:</h3>
+                  <p>{book.volumeInfo.description}</p>
                 </Card.Body>
               </Card>
             ))}

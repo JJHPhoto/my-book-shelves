@@ -8,15 +8,6 @@ import SearchPage from "./pages/SearchPage";
 import SavedPage from "./pages/SavedPage";
 import NotFound from "./pages/NotFound";
 
-// import "bootstrap/scss/bootstrap.scss";
-// import "bootstrap/scss/_utilities.scss";
-// import "bootstrap/scss/_variables.scss";
-// import "bootstrap/scss/_mixins.scss";
-// import "bootstrap/scss/_functions.scss";
-// import "bootstrap/scss/bootstrap-reboot.scss";
-// import "bootstrap/scss/bootstrap-grid.scss";
-// import "bootstrap/scss/_navbar.scss";
-
 function App() {
   return (
     <Router>

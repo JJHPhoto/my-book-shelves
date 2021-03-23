@@ -12,9 +12,10 @@ router
   .post((req, res) => {
     console.log("Books Body", req.body);
 
-    const { title, authors, description, image, link } = req.body;
+    const { id, title, authors, description, image, link } = req.body;
 
     Book.create({
+      id,
       title,
       authors,
       description,
