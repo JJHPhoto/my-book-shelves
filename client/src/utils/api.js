@@ -46,7 +46,8 @@ const api = {
   },
 
   async addBook(book) {
-    return axios.post("/api/books", book);
+    console.log("added books", { book });
+    return axios.post("/api/books", { ...book });
   },
 
   async deleteBook(bookId) {

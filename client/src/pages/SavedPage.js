@@ -6,14 +6,15 @@ function SavedPage() {
   const [books, setBooks] = useState([]);
 
   const getBooks = () => {
-    return api.getBooks().then(({ data }) => {
-      setBooks(data);
+    return api.getBooks().then((res) => {
+      console.log("getbooks data", res);
+      setBooks(res.data);
     });
   };
 
-  // useEffect(() => {
-  //   getBooks();
-  // }, [setBooks]);
+  useEffect(() => {
+    getBooks();
+  }, [setBooks]);
 
   // console.log("savedBooks", books);
 

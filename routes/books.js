@@ -10,9 +10,12 @@ router
       .catch((err) => console.log(err));
   })
   .post((req, res) => {
-    console.log("Books Body", req.body);
+    console.log("Books req", req.body);
 
-    const { id, title, authors, description, image, link } = req.body;
+    const { id, volumeInfo } = req.body;
+    const { title, authors, description, imageLinks, infoLink } = volumeInfo;
+    const image = imageLinks.thumbnail;
+    const link = infoLink;
 
     Book.create({
       id,

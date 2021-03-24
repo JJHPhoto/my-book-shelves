@@ -6,7 +6,8 @@ function SaveButton({ book }) {
   const saveBook = () => {
     api
       .addBook(book)
-      .then(() => {
+      .then((data) => {
+        console.log("book data", data);
         console.log("yes, book added");
       })
       .catch((err) => {
