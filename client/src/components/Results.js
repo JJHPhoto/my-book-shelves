@@ -13,7 +13,7 @@ function Results({ books }) {
               <Card key={book.id}>
                 <Card.Body>
                   <SaveButton book={book} />
-                  <p>
+                  <p className="my-4">
                     <img src={book.volumeInfo.imageLinks.thumbnail} />
                   </p>
                   <h2 className="my-3">

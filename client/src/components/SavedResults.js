@@ -19,7 +19,7 @@ function SavedResults({ books, getBooks }) {
                     getBooks={getBooks}
                     className="ml-2"
                   />
-                  <p>
+                  <p className="my-4">
                     <img src={book.image} />
                   </p>
                   <h2 className="my-3">
