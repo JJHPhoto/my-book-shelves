@@ -4,8 +4,6 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-require("./config/connect");
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -16,6 +14,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.use("/api", require("./routes/books"));
 
+require("./config/connect");
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function (req, res) {
