@@ -23,9 +23,9 @@ An app that helps you find the next book you want to read.
 
 ## Application Demo
 
-![](...)
+![image](./AppSS.jpg)
 
-To watch a video of the application being fully demo'd please use this link: [Application Demo](...).
+To watch a video of the application being fully demo'd please use this link: [Application Demo](https://drive.google.com/file/d/1eKCHhFoogO5SPak3iPoDMOGkfSjoisBb/view).
 
 ## Technologies Used
 
