@@ -1,4 +1,4 @@
-# [Google Book Search](https://jjh-bookshelves.herokuapp.com/)
+# [My Bookshelves](https://jjh-bookshelves.herokuapp.com/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

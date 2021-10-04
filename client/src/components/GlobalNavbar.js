@@ -7,7 +7,7 @@ function GlobalNavbar(props) {
     <Navbar bg="primary" variant="dark">
       <Navbar.Brand href="#home">
         {" "}
-        <GiBookshelf /> Google Books
+        <GiBookshelf /> My Bookshelves
       </Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">Search</Nav.Link>
