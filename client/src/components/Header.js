@@ -5,8 +5,11 @@ export default function Header() {
   return (
     <div>
       <Jumbotron>
-        <h1>Welcome to my Google books search app</h1>
-        <p>You can search and save books you are interested in reading.</p>
+        <h1>Welcome to my Google books app</h1>
+        <p>
+          If you are wanting to create a reading list with any book Google can
+          finde, this is the app for you!
+        </p>
       </Jumbotron>
     </div>
   );
