@@ -16,6 +16,10 @@ if (process.env.NODE_ENV === "production") {
 
 app.use("/api", require("./routes/books"));
 
+app.get("/service-worker.js", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "public", "service-worker.js"));
+});
+
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function (req, res) {
